@@ -1,0 +1,114 @@
+.container{
+    width: 640px;
+    margin: auto;
+    display: flex;
+    
+    margin-top: 150px;
+    background: white;
+    color: #262626;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 40px 50px;
+ 
+   
+   
+
+}
+
+.container hr{
+    height: 2px;
+    border: none;
+    background: #707070;
+}
+.container h2{
+    font-size: 27px;
+    font-weight: 500;
+}
+.container ul li{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding-left: 15px;
+    border: 1px solid #686868;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container button{
+    margin: auto;
+    width: 250px;
+    height: 65px;
+    background: #553f9a;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius:8px;
+    cursor: pointer;
+}
+
+.container index{
+    margin: auto;
+    font-size: 18px;
+
+}
+
+.container .correct{
+    background : #dffff2;
+    border-color: #00d397;
+}
+.container .wrong{
+    background : #FFEBEB;
+    border-color: #FF4A4A; 
+}
+
+.result {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.result h2 {
+  color: #28a745;
+}
+
+.result button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.result {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.congrats {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2ecc71;
+  margin-top: 1rem;
+}
+
+.try-again {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-top: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}

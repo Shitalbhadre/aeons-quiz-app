@@ -1,0 +1,107 @@
+body {
+  background: #2a2d8f; /* bluish background */
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.container h1 {
+  color: #2a2d8f;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.container button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  margin: 10px 0;
+}
+
+.container button:first-of-type {
+  background-color: #5e4bb7; /* Back button */
+  color: #fff;
+}
+
+.container button:first-of-type:hover {
+  background-color: #403187;
+  transform: translateY(-2px) scale(1.03);
+}
+
+.container button[type="submit"] {
+  background-color: #2a2d8f; /* Add Question */
+  color: #fff;
+}
+
+.container button[type="submit"]:hover {
+  background-color: #1b1f6b;
+  box-shadow: 0 6px 15px rgba(42, 45, 143, 0.6);
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* Form styling */
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Label and select */
+.container form label {
+  font-weight: bold;
+  color: #2a2d8f;
+  text-align: left;
+}
+
+.container form select,
+.container form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.container form select:focus,
+.container form input:focus {
+  border-color: #2a2d8f;
+  box-shadow: 0 0 10px rgba(42, 45, 143, 0.5);
+  transform: scale(1.02);
+}
+
+/* Input placeholders */
+.container form input::placeholder {
+  color: #999;
+}
+
+/* Option layout */
+.options-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Responsive small screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 20px;
+  }
+  .container button {
+    width: 100%;
+  }
+}
